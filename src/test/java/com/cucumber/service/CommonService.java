@@ -1,5 +1,6 @@
 package com.cucumber.service;
 
+import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import com.cucumber.page.Page;
 import org.springframework.stereotype.Service;
@@ -31,4 +32,14 @@ public abstract class CommonService {
         getFromMap(obj.getElements(), element).shouldBe(visible);
     }
 
+    public void clickElementFromList(Map<String, ElementsCollection> elementsList, String keyValueElement,  String elementName){
+        for(int i = 0; i < elementsList.get(keyValueElement).size(); i++){
+            SelenideElement element = elementsList.get(keyValueElement).get(i);
+
+            if(element.getText().contains(elementName)){
+                element.click();
+                break;
+            }
+        }
+    }
 }

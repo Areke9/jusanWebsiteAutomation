@@ -1,0 +1,5 @@
+text:
+  mainText: 'Одно приложение – много возможностей!'
+
+mainElement:
+  mainTextPath: //div[@class='body-padding']/div[1]/div[1]/div/div/div[1]/h1[1]

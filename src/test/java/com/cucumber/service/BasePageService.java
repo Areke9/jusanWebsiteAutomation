@@ -17,8 +17,5 @@ public class BasePageService extends CommonService {
         isElementDisplayed(basePage, "searchTextField");
         getFromMap(basePage.getElements(), "searchTextField").pressEnter();
     }
-
-
-
 }
 

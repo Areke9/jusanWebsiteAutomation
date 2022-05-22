@@ -10,7 +10,8 @@ import org.junit.runner.RunWith;
         plugin = {"html:target/cucumber/html", "json:target/cucumber/json/cucumber.json", "pretty"},
         monochrome = true,
         features = "src/test/resources/features",
-        glue = {"com.cucumber"}
+        glue = {"com.cucumber"},
+        tags = "@CheckWebsiteMainPageOpen"
 )
 public class CumberRunTest {
     @AfterClass
