@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 
 public class MainPageStep {
+    //main page steps
 
     @Autowired
     private BasePageService basePageService;
@@ -30,3 +31,4 @@ public class MainPageStep {
         mainPageService.switchCustomer(customerType);
     }
 }
+
